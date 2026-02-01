@@ -4,7 +4,7 @@
 :root {
     --first-color: #345A8B;
     --second-color: #FF8515;
-    --second-light-color: #ffe8d2;
+    --second-light-color: #ffeddc;
     --white-color: #ffffff;
     --black-color: #000000;
     --first-font: "Outfit", sans-serif;
@@ -262,9 +262,19 @@ nav img {
     background-color: var(--second-light-color);
     padding: 25px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 .third_bubble i {
     font-size: 40px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.third_bubble:hover i {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    transition: .3s ease-in-out;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .third_section {
