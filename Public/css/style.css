@@ -4,7 +4,8 @@
 :root {
     --first-color: #345A8B;
     --second-color: #FF8515;
-    --second-light-color: #ffeddc;
+    --second-light-color: #fff5ec;
+    --gray-light-color: #efefef;
     --white-color: #ffffff;
     --black-color: #000000;
     --first-font: "Outfit", sans-serif;
@@ -151,12 +152,22 @@ nav img {
 /* Section Two */
 .section_two {
     padding: 50px 0;
+    background-color: var(--gray-light-color);
+    background-image: url("../image/why-choose-one-shape-4.png");
+    background-repeat: no-repeat;
 }
 .second_box {
     outline: 1px solid var(--first-color);
     border-radius: 8px;
     padding: 20px;
     transition: .2s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(255, 146, 87, 0.341),
+        inset 0 0 20px rgba(255, 255, 255, 0.694);
 }
 .second_box i {
     color: var(--second-color);
@@ -169,11 +180,22 @@ nav img {
     transition: .2s ease-in-out;
     color: var(--white-color);
     outline: none;
+    transform: translateY(-10px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow:
+        0 8px 32px rgb(255, 255, 255),
+        inset 0 0 20px rgba(255, 119, 35, 0.792);
 }
 .second_2nd_box {
     background-color: var(--second-color) !important;
     color: var(--white-color);
     outline: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow:
+        0 8px 32px rgb(255, 255, 255),
+        inset 0 0 20px rgba(255, 119, 35, 0.792);
 }
 .second_2nd_box i {
     color: var(--white-color);
@@ -185,6 +207,11 @@ nav img {
     background-color: var(--white-color) !important;
     color: var(--black-color) !important;
     outline: 1px solid var(--first-color) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow:
+        0 8px 32px rgba(255, 255, 255, 0.849),
+        inset 0 0 20px rgba(255, 255, 255, 0.854);
 }
 .second_box h4 {
     margin-top: 20px;
@@ -234,6 +261,9 @@ nav img {
 .earth_batch i {
     font-size: 40px;
 }
+.third_img_tag img:hover .earth_batch {
+    transform: translateY(-10px);
+}
 .third_right_box {
     background-color: var(--first-color);
     width: 40%;
@@ -243,8 +273,20 @@ nav img {
 }
 .third_right_box i {
     font-size: 40px;
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg); */
     margin-bottom: 15px;
+    animation: iconAnime 5s linear infinite;
+}
+@keyframes iconAnime {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 .since_text {
     color: var(--first-color);
@@ -297,6 +339,95 @@ nav img {
     }
 }
 /* Third Section */
+
+
+/* Service Section */
+.service_section {
+    padding: 50px 0;
+    background-image: url("../image/pattern-2.jpg");
+    margin-top: 40px;
+}
+.service_section h5 {
+    display: inline;
+    background-color: var(--second-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: var(--white-color);
+}
+.service_section h4 {
+    font-size: 22px;
+}
+.service_section .fa-nfc-directional {
+    font-size: 40px;
+}
+.serve_div {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--black-color);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow:
+        /* 0 8px 10px rgba(255, 255, 255, 0.849), */
+        inset 0 0 10px rgba(255, 255, 255, 0.854);
+}
+.serve_div img {
+    border-radius: 10px;
+}
+.serve_div .service_pera {
+    height: 120px;
+    overflow-y: scroll;
+}
+.service_content {
+    padding: 15px;
+    outline: 1px solid var(--first-color);
+    border-radius: 10px;
+}
+.serve_div:hover .fa-nfc-directional {
+    color: var(--second-color);
+}
+.serve_div:hover h4 {
+    color: var(--first-color);
+}
+.service_section h2 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .service_section {
+        padding: 50px 0;
+        margin-top: 30px;
+    }
+}
+/* Service Section */
+
+/* Why Choose */
+.why_choose {
+    padding: 50px 0;
+}
+.why_choose h5 {
+    display: inline;
+    background-color: var(--second-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: var(--white-color);
+}
+.why_choose h2 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+.choose_main_img {
+    position: relative;
+}
+.choose_main_img img {
+    border-radius: 10px;
+}
+.choose_sub_img {
+    position: absolute;
+    right: 80px;
+    bottom: -20px;
+    width: 350px;
+    border-radius: 10px;
+}
+/* Why Choose */
 
 
 .footer_copywrite_part {
