@@ -380,6 +380,7 @@ nav img {
     padding: 15px;
     outline: 1px solid var(--first-color);
     border-radius: 10px;
+    margin-top: 10px;
 }
 .serve_div:hover .fa-nfc-directional {
     color: var(--second-color);
