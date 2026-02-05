@@ -6,6 +6,7 @@
     --second-color: #FF8515;
     --second-light-color: #fff5ec;
     --gray-light-color: #efefef;
+    --blue-light-color: #e3e7fd;
     --white-color: #ffffff;
     --black-color: #000000;
     --first-font: "Outfit", sans-serif;
@@ -324,6 +325,7 @@ nav img {
     }
     .third_section h2 {
         font-size: 30px;
+        margin-bottom: 20px;
     }
     .earth_batch {
         width: 80%;
@@ -361,13 +363,20 @@ nav img {
     font-size: 40px;
 }
 .serve_div {
-    background: rgba(255, 255, 255, 0.2);
+    background: transparent;
     color: var(--black-color);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     box-shadow:
         /* 0 8px 10px rgba(255, 255, 255, 0.849), */
         inset 0 0 10px rgba(255, 255, 255, 0.854);
+        transition: .3s ease-in-out;
+        padding: 3px;
+        border-radius: 10px;
+}
+.serve_div:hover {
+    transform: translateY(-10px);
+    transition: .3s ease-in-out;
 }
 .serve_div img {
     border-radius: 10px;
@@ -394,8 +403,14 @@ nav img {
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .service_section {
-        padding: 50px 0;
+        padding: 30px 0;
         margin-top: 30px;
+    }
+    .serviceSwiper {
+        margin-top: 20px;
+    }
+    .service_section h2 {
+        font-size: 35px;
     }
 }
 /* Service Section */
@@ -428,8 +443,97 @@ nav img {
     width: 350px;
     border-radius: 10px;
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .why_choose {
+        padding: 30px 0;
+    }
+    .choose_sub_img {
+        display: none;
+    }
+    .choose_first_img {
+        width: 100%;
+    }
+    .why_choose h2 {
+        font-size: 35px;
+    }
+    .choose_main_img {
+        margin-bottom: 40px;
+    }
+}
 /* Why Choose */
 
+
+/* Contact Form */
+.contact_form_section {
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(3, 27, 75, 0.8),rgba(3, 27, 75, 0.8)),url("../image/consulting-one-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact_form_section h2 {
+    font-size: 50px;
+    color: var(--white-color);
+}
+.contact_form_section h3 {
+    color: var(--white-color);
+    font-size: 40px;
+}
+.contact_form_section p {
+    color: var(--white-color);
+}
+.contact_form_section .fa-codiepie {
+    color: var(--second-color);
+    font-size: 40px;
+}
+.consulting_icon {
+    background-color: var(--white-color);
+    padding: 15px 0;
+    border-radius: 10px;
+}
+.consulting_icon p {
+    color: var(--black-color);
+}
+
+.contact_form {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+.contact_form input {
+    background-color: var(--blue-light-color);
+}
+.contact_form textarea {
+    background-color: var(--blue-light-color);
+}
+.contact_form h4 {
+    font-size: 35px;
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+.contact_form .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.contact_form .btn:hover {
+    background-color: var(--second-color);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px)  {
+    .contact_form_section {
+        padding: 30px 0;
+    }
+    .contact_form_section h2 {
+        font-size: 35px;
+    }
+    .contact_form h4 {
+        font-size: 30px;
+    }
+    .contact_form {
+        margin-top: 20px;
+    }
+}
+/* Contact Form */
 
 .footer_copywrite_part {
     background-color: var(--first-color);
