@@ -77,10 +77,14 @@ p, li {
     height: 100%;
 }
 .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html,body {
+    overflow-x: hidden;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
@@ -149,6 +153,51 @@ nav img {
     }
 }
 /* Navbar */
+
+/* Hero */
+.hero_slider {
+    padding: 180px 0;
+}
+.slider_one {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../image/main-slider-1-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider_one h1 {
+    color: var(--white-color);
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.swiper-pagination-bullet {
+    background-color: var(--gray-light-color) !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--white-color) !important;
+}
+.slider_one p {
+    color: var(--white-color);
+}
+.slider_one .btn {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border-radius: 40px;
+}
+.slider_one .btn:hover {
+    background-color: var(--gray-light-color);
+    color: var(--first-color);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .hero_slider {
+        padding: 80px 0;
+    }
+    .slider_one h1 {
+        font-size: 40px;
+    }
+}
+/* Hero */
 
 /* Section Two */
 .section_two {
@@ -415,6 +464,134 @@ nav img {
 }
 /* Service Section */
 
+/* Scroll Text */
+#scroll_text {
+    background-color: var(--second-light-color);
+    transform: rotate(-3deg);
+}
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+  margin: 20px 0;
+}
+.m-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(2);
+  transition: all 5s ease;
+}
+.m-scroll__title > div {
+  display: flex;
+  -webkit-animation: scrollText 50s infinite linear;
+          animation: scrollText 50s infinite linear;
+}
+.m-scroll__title h1 {
+  margin: 0;
+  font-size: 50px;
+  color: #1D9CEB;
+  transition: all 5s ease;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.m-scroll__title i {
+    font-size: 20px;
+}
+.m-scroll__title a {
+  text-decoration: none;
+  color: #0b2453;
+}
+.m-scroll__title a:hover {
+  -webkit-text-stroke: 1px #0b2453;
+  color: transparent;
+}
+div:hover {
+  animation-play-state: paused;
+}
+@-webkit-keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .m-scroll__title h1 {
+        font-size: 23px;
+    }
+    .m-scroll__title i {
+        font-size: 13px;
+    }
+}
+
+/* Video Section */
+.video_section {
+    padding: 50px 0;
+}
+.video_section h2 {
+    font-size: 50px;
+    margin-top: 15px;
+}
+.video_section h5 {
+    display: inline;
+    background-color: var(--second-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: var(--white-color);
+}
+.video_section .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.video_section .btn:hover {
+    background-color: var(--second-color);
+}
+.video_section .fa-square-whatsapp {
+    font-size: 40px;
+    color: #0b8100;
+}
+.video_section a {
+    color: var(--second-color);
+}
+/* Video Section */
+
+/* Review */
+.review_section {
+    padding: 50px 0;
+}
+.review_section h2 {
+    font-size: 50px;
+    margin-top: 15px;
+}
+.review_section h5 {
+    display: inline;
+    background-color: var(--second-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: var(--white-color);
+}
+/* Review */
+
 /* Why Choose */
 .why_choose {
     padding: 50px 0;
@@ -462,6 +639,25 @@ nav img {
 }
 /* Why Choose */
 
+/* Trusted */
+.trusted_company {
+    padding: 50px 0;
+}
+.trusted_company_box {
+    border: 1px solid var(--first-color);
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+.trusted_company_box h4 i {
+    transform: rotate(-20deg);
+    color: var(--second-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .trusted_company {
+        padding: 30px 0;
+    }
+}
+/* Trusted */
 
 /* Contact Form */
 .contact_form_section {
@@ -470,6 +666,32 @@ nav img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+.circle_container 
+{
+    background-color: var(--second-color);
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    border-radius: 50%;
+    mix-blend-mode: overlay;
+    animation: roundAnim 8s infinite linear;
+}
+@keyframes roundAnim {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(80px);
+    }
+    75% {
+        transform: translateX(-80px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 .contact_form_section h2 {
     font-size: 50px;
@@ -497,7 +719,7 @@ nav img {
 
 .contact_form {
     background-color: var(--white-color);
-    padding: 20px;
+    padding: 50px;
     border-radius: 15px;
 }
 .contact_form input {
@@ -531,6 +753,10 @@ nav img {
     }
     .contact_form {
         margin-top: 20px;
+        padding: 20px;
+    }
+    .circle_container {
+        display: none;
     }
 }
 /* Contact Form */
