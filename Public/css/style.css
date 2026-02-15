@@ -286,7 +286,15 @@ nav img {
     padding: 50px 0;
 }
 .third_section h2 {
-    font-size: 45px;
+    font-size: 42px;
+    margin-top: 20px;
+}
+.third_section h5 {
+    display: inline;
+    background-color: var(--second-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: var(--white-color);
 }
 .third_img_tag {
     position: relative;
@@ -448,7 +456,7 @@ nav img {
 }
 .service_section h2 {
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 42px;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .service_section {
@@ -459,7 +467,7 @@ nav img {
         margin-top: 20px;
     }
     .service_section h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 /* Service Section */
@@ -542,6 +550,9 @@ div:hover {
     .m-scroll__title i {
         font-size: 13px;
     }
+    .m-scroll__title h1 {
+        padding-bottom: 0;
+    }
 }
 
 /* Video Section */
@@ -549,7 +560,7 @@ div:hover {
     padding: 50px 0;
 }
 .video_section h2 {
-    font-size: 50px;
+    font-size: 42px;
     margin-top: 15px;
 }
 .video_section h5 {
@@ -573,6 +584,20 @@ div:hover {
 .video_section a {
     color: var(--second-color);
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .video_section iframe {
+        margin-bottom: 20px;
+    }
+    .video_section h2 {
+        font-size: 30px;
+    }
+    .video_number {
+        display: block !important;
+    }
+    .video_what_num {
+        margin-top: 20px;
+    }
+}
 /* Video Section */
 
 /* Review */
@@ -580,7 +605,7 @@ div:hover {
     padding: 50px 0;
 }
 .review_section h2 {
-    font-size: 50px;
+    font-size: 42px;
     margin-top: 15px;
 }
 .review_section h5 {
@@ -589,6 +614,14 @@ div:hover {
     padding: 5px 10px;
     border-radius: 50px;
     color: var(--white-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .review_section {
+        padding: 30px 0;
+    }
+    .review_section h2 {
+        font-size: 30px;
+    }
 }
 /* Review */
 
@@ -605,7 +638,7 @@ div:hover {
 }
 .why_choose h2 {
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 42px;
 }
 .choose_main_img {
     position: relative;
