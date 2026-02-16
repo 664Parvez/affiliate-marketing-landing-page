@@ -66,3 +66,4 @@ window.addEventListener("mousemove", (e)=>{
         cursor.classList.remove("active");
     }
 })
+
