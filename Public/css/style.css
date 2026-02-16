@@ -100,11 +100,15 @@ html,body {
 
 /* Top Nav */
 .top_nav {
-    padding: 10px 0;
+    /* padding: 10px 0; */
     background-color: var(--first-color);
 }
 .number_info li {
     display: inline-block;
+}
+.number_info li:first-child {
+    background-color: var(--second-color);
+    padding: 5px 15px;
 }
 .number_info li a {
     color: var(--white-color);
@@ -147,9 +151,31 @@ nav {
         0 8px 32px rgba(124, 124, 124, 0.25),
         inset 0 0 20px rgba(255, 255, 255, 0.427);
 }
+nav .fa-grip {
+    font-size: 30px;
+    cursor: pointer;
+}
 nav img {
     width: 130px;
     padding: 5px 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a {
+    color: var(--first-color);
+}
+nav ul li a:hover {
+    color: var(--second-color);
+}
+nav .lets_talk_btn {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+nav .lets_talk_btn:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     nav {
@@ -814,8 +840,8 @@ div:hover {
 .circle_container 
 {
     background-color: var(--second-color);
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     position: absolute;
     top: 20px;
     border-radius: 50%;
@@ -827,10 +853,10 @@ div:hover {
         transform: translateX(0px);
     }
     25% {
-        transform: translateX(80px);
+        transform: translateX(50px);
     }
     75% {
-        transform: translateX(-80px);
+        transform: translateX(-50px);
     }
     100% {
         transform: translateX(0px);
