@@ -100,7 +100,6 @@ html,body {
 
 /* Top Nav */
 .top_nav {
-    /* padding: 10px 0; */
     background-color: var(--first-color);
 }
 .number_info li {
@@ -134,6 +133,14 @@ html,body {
         text-align: center;
     }
 }
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .number_info {
+        text-align: center;
+    }
+    .social_media {
+        display: none;
+    }
+}
 /* Top Nav */
 
 /* Navbar */
@@ -154,6 +161,7 @@ nav {
 nav .fa-grip {
     font-size: 30px;
     cursor: pointer;
+    color: var(--first-color);
 }
 nav img {
     width: 130px;
@@ -177,9 +185,83 @@ nav .lets_talk_btn:hover {
     background-color: var(--first-color);
     color: var(--white-color);
 }
+.sidebar_info {
+    padding: 20px;
+    background-color: var(--first-color);
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    height: 100vh;
+    z-index: 999;
+    overflow-y: scroll;
+    transition: .5s ease-in-out;
+}
+.fa-circle-xmark {
+    color: var(--white-color);
+    font-size: 25px;
+    cursor: pointer;
+}
+.mobile_menu {
+    display: none;
+}
+.mobile_menu h4 {
+    color: var(--white-color);
+}
+.mobile_menu hr {
+    color: var(--white-color);
+}
+.mobile_menu ul li {
+    padding: 10px 0;
+}
+.mobile_menu ul li a {
+    color: var(--white-color);
+}
+.mobile_menu ul li a:hover {
+    color: var(--gray-light-color);
+}
+.sidebar_about {
+    margin-top: 30px;
+}
+.sidebar_about img {
+    width: 150px;
+}
+.sidebar_about p {
+    color: var(--white-color);
+}
+.sidebar_about hr {
+    color: var(--white-color);
+}
+.sidebar_contact_info h4 {
+    color: var(--white-color);
+}
+.sidebar_contact_info ul li {
+    color: var(--white-color);
+    padding: 10px 0;
+}
+.sidebar_contact_info hr {
+    color: var(--white-color);
+}
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     nav {
         margin: 0 10px;
+    }
+    .mobile_menu {
+        display: block;
+    }
+    .sidebar_info {
+        width: 100% !important;
+    }
+    .pc_menu {
+        display: none;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .pc_menu {
+        display: none;
+    }
+    .mobile_menu {
+        display: block;
     }
 }
 /* Navbar */
@@ -311,6 +393,18 @@ nav .lets_talk_btn:hover {
     }
     .slider_one h1 {
         font-size: 40px;
+    }
+    .slider_two h1 {
+        font-size: 40px;
+    }
+    .slider_three h1 {
+        font-size: 40px;
+    }
+    .slider_anim_img {
+        display: none !important;
+    }
+    .slider_anim_img_two {
+        display: none !important;
     }
 }
 /* Hero */
@@ -940,6 +1034,25 @@ div:hover {
 .footer_copywrite_part a {
     color: #ffffff;
     text-decoration: none;
+}
+
+.cursor {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-left: -22px;
+    margin-top: -22px;
+    z-index: 1000;
+    backdrop-filter: grayscale(1);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cursor.active {
+    transform: scale(1.5);
 }
 
 #btn-back-to-top {

@@ -26,6 +26,9 @@
 </head>
 
 <body>
+    
+    <div class="cursor" id="cursor"></div>
+
     <div class="top_nav">
         <div class="container">
             <div class="row align-items-center">
@@ -60,7 +63,7 @@
                         </a>
                     </div>
                 </div>
-                <div>
+                <div class="pc_menu">
                     <ul>
                         <li><a href="#about_section">About Us</a></li>
                         <li><a href="#services_section">Services</a></li>
@@ -72,10 +75,43 @@
                 <div>
                     <a href="#contact_form_section" class="btn btn-lg lets_talk_btn">Let's Talk</a>
                 </div>
-                <div><i class="fa-solid fa-grip"></i></div>
+                <div><i class="fa-solid fa-grip" id="open_sidebar"></i></div>
             </div>
         </div>
     </nav>
+
+    <div class="sidebar_info">
+        <div class="text-end">
+            <i class="fa-regular fa-circle-xmark" id="close_sidebar"></i>
+        </div>
+        <div class="mobile_menu">
+            <h4>Menu</h4>
+            <hr>
+            <ul>
+                <li><a href="#about_section">About Us</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#why_choose_section">Why Choose Us</a></li>
+                <li><a href="#working_process_section">Working Process</a></li>
+                <li><a href="#testimonial_section">Testimonial</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar_about">
+            <img src="./Public/image/logo.png" alt="">
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A pariatur itaque animi mollitia soluta ducimus perspiciatis modi alias blanditiis! Non impedit eaque, quaerat corrupti harum suscipit nam vitae eum eveniet.</p>
+        </div>
+
+        <div class="sidebar_contact_info mt-4">
+            <h4>Contact Info</h4>
+            <hr>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> | +880 1758-875456</li>
+                <li><i class="fa-regular fa-envelope"></i> | info@affiliatemarketing.com</li>
+                <li><i class="fa-solid fa-location-dot"></i> | Flat # 6/A, Level 7, House 10, Rd# 02, Sec# 06, House Building Uttara Dhaka-1230.</li>
+            </ul>
+        </div>
+    </div>
 
     <section>
         <!-- Swiper -->
