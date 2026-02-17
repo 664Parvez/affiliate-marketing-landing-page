@@ -256,6 +256,9 @@ nav .lets_talk_btn:hover {
     .pc_menu {
         display: none;
     }
+    nav .open_sidebar_icon {
+        display: none;
+    }
 }
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     .pc_menu {
@@ -263,6 +266,9 @@ nav .lets_talk_btn:hover {
     }
     .mobile_menu {
         display: block;
+    }
+    nav .open_sidebar_icon {
+        display: none;
     }
 }
 /* Navbar */
