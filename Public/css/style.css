@@ -188,12 +188,10 @@ nav .lets_talk_btn:hover {
 .sidebar_info {
     padding: 20px;
     background-color: var(--first-color);
-    width: 430px;
+    width: 400px;
     position: fixed;
     top: 0;
-    /* right: -400px; */
-    right: 0px;
-    transform: translateX(-430px);
+    right: -400px;
     height: 100vh;
     z-index: 999;
     overflow-y: scroll;
@@ -251,10 +249,10 @@ nav .lets_talk_btn:hover {
     .mobile_menu {
         display: block;
     }
-    /* .sidebar_info {
+    .sidebar_info {
         width: 400px !important;
         right: -400px;
-    } */
+    }
     .pc_menu {
         display: none;
     }
