@@ -188,10 +188,12 @@ nav .lets_talk_btn:hover {
 .sidebar_info {
     padding: 20px;
     background-color: var(--first-color);
-    width: 400px;
+    width: 430px;
     position: fixed;
     top: 0;
-    right: -400px;
+    /* right: -400px; */
+    right: 0px;
+    transform: translateX(-430px);
     height: 100vh;
     z-index: 999;
     overflow-y: scroll;

@@ -36,7 +36,8 @@ const sidebar_info = document.querySelector(".sidebar_info")
 const open_sidebar = document.getElementById("open_sidebar")
 
 open_sidebar.addEventListener("click", (e) => {
-    sidebar_info.style.right = 0
+    // sidebar_info.style.right = 0
+    sidebar_info.style.transform = "translate(0)"
 
     e.preventDefault()
 })
@@ -44,7 +45,8 @@ open_sidebar.addEventListener("click", (e) => {
 const close_sidebar = document.getElementById("close_sidebar")
 
 close_sidebar.addEventListener("click", (e) => {
-    sidebar_info.style.right = "-400px"
+    // sidebar_info.style.right = "-400px"
+    sidebar_info.style.transform = "translate(-430px)"
     sidebar_info.style.transition = ".5s"
 
     e.preventDefault()
