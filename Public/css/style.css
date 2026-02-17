@@ -469,6 +469,15 @@ nav .lets_talk_btn:hover {
     .slider_anim_img_two {
         display: none !important;
     }
+    .slider_first_circle {
+        width: 300px;
+        height: 300px;
+    }
+    .slider_second_circle {
+        width: 300px;
+        top: -200px;
+        height: 300px;
+    }
 }
 /* Hero */
 
