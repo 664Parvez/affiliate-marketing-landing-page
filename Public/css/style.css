@@ -1036,7 +1036,7 @@ div:hover {
     text-decoration: none;
 }
 
-.cursor {
+/* .cursor {
     position: fixed;
     height: 40px;
     width: 40px;
@@ -1053,7 +1053,7 @@ div:hover {
 
 .cursor.active {
     transform: scale(1.5);
-}
+} */
 
 #btn-back-to-top {
     position: fixed;
