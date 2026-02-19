@@ -87,6 +87,7 @@ html,body {
     overflow-x: hidden;
 }
 
+
 /* @media only screen and (min-width: 300px) and (max-width: 500px) {
     html,body {
         overflow-x: hidden;
@@ -285,18 +286,22 @@ nav .lets_talk_btn:hover {
     overflow: hidden;
 }
 .slider_one h1 {
+    animation: slide-up .5s ease-out forwards;
     color: var(--white-color);
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 700;
 }
+
 .slider_one p {
     color: var(--white-color);
+    animation: slide-up 1s ease-out forwards;
 }
 .slider_one .btn {
     background-color: var(--second-color);
     color: var(--white-color);
     border-radius: 40px;
+    animation: slide-up 1.5s ease-out forwards;
 }
 .slider_one .btn:hover {
     background-color: var(--gray-light-color);
@@ -314,14 +319,17 @@ nav .lets_talk_btn:hover {
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 700;
+    animation: slide-up .5s ease-out forwards;
 }
 .slider_two p {
     color: var(--white-color);
+    animation: slide-up 1s ease-out forwards;
 }
 .slider_two .btn {
     background-color: var(--second-color);
     color: var(--white-color);
     border-radius: 40px;
+    animation: slide-up 1.5s ease-out forwards;
 }
 .slider_two .btn:hover {
     background-color: var(--gray-light-color);
@@ -339,14 +347,17 @@ nav .lets_talk_btn:hover {
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 700;
+    animation: slide-up .5s ease-out forwards;
 }
 .slider_three p {
     color: var(--white-color);
+    animation: slide-up 1s ease-out forwards;
 }
 .slider_three .btn {
     background-color: var(--second-color);
     color: var(--white-color);
     border-radius: 40px;
+    animation: slide-up 1.5s ease-out forwards;
 }
 .slider_three .btn:hover {
     background-color: var(--gray-light-color);
@@ -395,6 +406,17 @@ nav .lets_talk_btn:hover {
     100% {
         transform: rotate(360deg);
     }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; 
+  }
 }
 
 .slider_first_circle {
@@ -739,6 +761,14 @@ nav .lets_talk_btn:hover {
 .service_section h2 {
     margin-top: 20px;
     font-size: 42px;
+}
+.service_section .btn {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+.service_section .btn:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .service_section {
