@@ -51,6 +51,7 @@ close_sidebar.addEventListener("click", (e) => {
 })
 
 
+
 // // Cursor
 // window.addEventListener("mousemove", (e)=>{
 //     let cursor = document.getElementById("cursor");
