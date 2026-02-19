@@ -192,7 +192,7 @@ nav .lets_talk_btn:hover {
     width: 400px;
     position: fixed;
     top: 0;
-    right: -400px;
+    left: -400px;
     height: 100vh;
     z-index: 999;
     overflow-y: scroll;

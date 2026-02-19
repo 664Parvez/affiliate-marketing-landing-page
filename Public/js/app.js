@@ -32,19 +32,20 @@ copyright.innerText = copyDate
 
 
 // sidebar
-const sidebar_info = document.querySelector(".sidebar_info")
 const open_sidebar = document.getElementById("open_sidebar")
 
 open_sidebar.addEventListener("click", (e) => {
-    sidebar_info.style.right = 0
-
+    var sidebar_info = document.querySelector(".sidebar_info")
+    sidebar_info.style.left = 0
+    
     e.preventDefault()
 })
 
 const close_sidebar = document.getElementById("close_sidebar")
 
 close_sidebar.addEventListener("click", (e) => {
-    sidebar_info.style.right = "-400px"
+    var sidebar_info = document.querySelector(".sidebar_info")
+    sidebar_info.style.left = "-400px"
     sidebar_info.style.transition = ".5s"
 
     e.preventDefault()
